@@ -6,37 +6,63 @@
 <style>
 
 body{
-font-family: Arial;
+font-family: Arial, sans-serif;
 margin:0;
 background-image:url("https://images.unsplash.com/photo-1523381210434-271e8be1f52b");
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
+color:#333;
 }
 
+/* Header */
+
 header{
-background:black and red and white ;
+background:black;
 color:white;
 padding:25px;
 text-align:center;
-font-size:30px;
+font-size:32px;
+letter-spacing:2px;
 }
 
+/* Navigation bar */
+
 nav{
-background:#333;
+background:#222;
 text-align:center;
 }
 
 nav a{
 color:white;
-padding:15px;
+padding:15px 20px;
 display:inline-block;
 text-decoration:none;
+font-weight:bold;
 }
 
 nav a:hover{
-background:#555;
+background:#e63946;
 }
+
+/* Section titles */
+
+h2{
+text-align:center;
+margin-top:40px;
+}
+
+/* About section */
+
+.about{
+background:white;
+padding:20px;
+margin:20px;
+border-radius:8px;
+text-align:center;
+}
+
+/* Product section */
 
 .products{
 display:flex;
@@ -49,18 +75,50 @@ margin:20px;
 background:white;
 margin:15px;
 padding:20px;
-width:200px;
+width:220px;
 text-align:center;
 border-radius:10px;
-box-shadow:0 0 10px #ccc;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
+.product h3{
+margin-top:10px;
+}
+
+/* Button */
+
 button{
-background:black;
+background:#e63946;
 color:white;
 border:none;
-padding:10px;
+padding:10px 15px;
 cursor:pointer;
+border-radius:5px;
+font-weight:bold;
+}
+
+button:hover{
+background:black;
+}
+
+/* Contact */
+
+.contact{
+background:white;
+margin:30px;
+padding:20px;
+text-align:center;
+border-radius:8px;
+}
+
+/* Footer */
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
 }
 
 </style>
@@ -76,19 +134,22 @@ SKR CLOTHING
 <nav>
 <a href="#">Home</a>
 <a href="#about">About</a>
-<a href="#">Products</a>
-<a style="text-align:center;">
-📞 <a href="tel:+94729225187">Call Us: +94729225187,</a>
-</p>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<h2 style="text-align:center;">Our Products</h2>
-<h2 id="about" style="text-align:center;">About Us</h2>
+<h2 id="about">About Us</h2>
 
-<p style="text-align:center; padding:20px;">
-Welcome to SKR Clothing. We provide high quality fashion products including
-T-shirts, hoodies and caps. Our mission is to deliver stylish and affordable clothing.
+<div class="about">
+<p>
+Welcome to <b>SKR Clothing</b>.  
+We provide high-quality fashion products including T-shirts, hoodies, caps and denim.  
+Our mission is to deliver stylish and affordable clothing for everyone.
 </p>
+</div>
+
+<h2 id="products">Our Products</h2>
+
 <div class="products">
 
 <div class="product">
@@ -108,22 +169,25 @@ T-shirts, hoodies and caps. Our mission is to deliver stylish and affordable clo
 <p>Rs.1500</p>
 <button>Order Now</button>
 </div>
-  
-<div class="product">  
+
+<div class="product">
 <h3>Denim</h3>
 <p>Rs.5000</p>
 <button>Order Now</button>
 </div>
-  
+
 </div>
 
+<h2 id="contact">Contact Us</h2>
+
+<div class="contact">
+<p>📞 Phone: <a href="tel:+94729225187">+94 72 922 5187</a></p>
+<p>📧 Email: mohammedsadathmohammedshakir@gmail.com</p>
+</div>
+
+<footer>
+© 2026 SKR Clothing | All Rights Reserved
+</footer>
+
 </body>
-</html>
-
-
-
-
-
-
-
-
+</htm
