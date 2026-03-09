@@ -4,7 +4,50 @@
 <title>SKR Clothing</title>
 
 <style>
- .banner{
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background-image:url("https://images.unsplash.com/photo-1523381210434-271e8be1f52b");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+color:#333;
+}
+
+/* Header */
+
+header{
+background:black;
+color:white;
+padding:25px;
+text-align:center;
+font-size:32px;
+letter-spacing:2px;
+}
+
+/* Navigation */
+
+nav{
+background:#222;
+text-align:center;
+}
+
+nav a{
+color:white;
+padding:15px 20px;
+display:inline-block;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+background:#e63946;
+}
+
+/* Banner */
+
+.banner{
 text-align:center;
 padding:100px 20px;
 color:white;
@@ -33,46 +76,6 @@ border-radius:5px;
 
 .banner button:hover{
 background:black;
-} 
-
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background-image:url("https://images.unsplash.com/photo-1523381210434-271e8be1f52b");
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-color:#333;
-}
-
-/* Header */
-
-header{
-background:black;
-color:white;
-padding:25px;
-text-align:center;
-font-size:32px;
-letter-spacing:2px;
-}
-
-/* Navigation bar */
-
-nav{
-background:#222;
-text-align:center;
-}
-
-nav a{
-color:white;
-padding:15px 20px;
-display:inline-block;
-text-decoration:none;
-font-weight:bold;
-}
-
-nav a:hover{
-background:#e63946;
 }
 
 /* Section titles */
@@ -90,9 +93,12 @@ padding:20px;
 margin:20px;
 border-radius:8px;
 text-align:center;
+max-width:800px;
+margin-left:auto;
+margin-right:auto;
 }
 
-/* Product section */
+/* Products */
 
 .products{
 display:flex;
@@ -111,11 +117,7 @@ border-radius:10px;
 box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
-.product h3{
-margin-top:10px;
-}
-
-/* Button */
+/* Buttons */
 
 button{
 background:#e63946;
@@ -139,6 +141,9 @@ margin:30px;
 padding:20px;
 text-align:center;
 border-radius:8px;
+max-width:600px;
+margin-left:auto;
+margin-right:auto;
 }
 
 /* Footer */
@@ -152,7 +157,6 @@ margin-top:30px;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -168,18 +172,23 @@ SKR CLOTHING
 <a href="#contact">Contact</a>
 </nav>
 
+<section class="banner">
+<h1>SKR Clothing</h1>
+<p>Style • Quality • Comfort</p>
+<a href="#products"><button>Shop Now</button></a>
+</section>
+
 <h2 id="about">About Us</h2>
 
 <div class="about">
 <p>
-<p style="text-align:center; padding:20px; max-width:700px; margin:auto;">
 Welcome to <b>SKR Clothing</b>. We provide high-quality fashion products including T-shirts, hoodies, caps, and denim. 
 Our mission is to deliver stylish, comfortable, and affordable clothing for everyone.
-
-We are committed to offering modern fashion with good quality and excellent customer service. 
-We also provide <b>door delivery</b> for your convenience. Order now and enjoy fast and reliable delivery.
 </p>
 
+<p>
+We are committed to offering modern fashion with excellent quality and customer service. 
+We also provide <b>door delivery</b> for your convenience. Order now and enjoy fast and reliable delivery.
 </p>
 </div>
 
@@ -225,6 +234,4 @@ We also provide <b>door delivery</b> for your convenience. Order now and enjoy f
 </footer>
 
 </body>
-</htm
-
-
+</html>
